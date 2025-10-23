@@ -13,16 +13,17 @@ export const HeroSections = ()=>{
                 </h1>
                 <div className="flex items-center justify-center space-x-5">
                     <span title="LinkedIn">
-                        <Linkedin size={24} className="hover:text-primary hover:cursor-pointer" />
+                       <a href="https://www.linkedin.com/in/1011-pranav-sharma/" target="_blank"><Linkedin size={24} className="hover:text-primary hover:cursor-pointer" /></a> 
                     </span>
                     <span title="GitHub">
-                        <Github size={24} className="hover:text-primary hover:cursor-pointer" />
+                        <a href="https://github.com/Pranav11-git" target="_blank"><Github size={24} className="hover:text-primary hover:cursor-pointer" /></a>
                     </span>
                     <span title="Email">
-                        <Mail size={24} className="hover:text-primary hover:cursor-pointer" />
+                        <a href="mailto:prs11102004@gmail.com" ><Mail size={24} className="hover:text-primary hover:cursor-pointer" /></a>
+                        
                     </span>
                     <span title="Resume">
-                        <File size={24} className="hover:text-primary hover:cursor-pointer" />
+                        <a href="src/assets/Pranav_Resume (14).pdf" target="_blank"><File size={24} className="hover:text-primary hover:cursor-pointer" /></a>
                     </span>
                 </div>
 
