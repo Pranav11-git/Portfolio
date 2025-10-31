@@ -1,5 +1,5 @@
 import { Linkedin, Github, Mail, File } from "lucide-react";
-import Resume from "../assets/Pranav_Resume (14).pdf"; // or use /public path
+
 
 export const ContactMe = () => {
   return (
@@ -43,7 +43,7 @@ export const ContactMe = () => {
           />
         </a>
 
-        <a href={Resume} target="_blank" rel="noopener noreferrer" title="Resume">
+        <a href={"/assets/Pranav_Resume.pdf"} target="_blank" rel="noopener noreferrer" title="Resume">
           <File
             size={28}
             className="hover:text-primary-foreground hover:scale-110 transition-all duration-200 cursor-pointer"

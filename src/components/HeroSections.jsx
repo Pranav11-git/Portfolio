@@ -23,7 +23,7 @@ export const HeroSections = ()=>{
                         
                     </span>
                     <span title="Resume">
-                        <a href="src/assets/Pranav_Resume (14).pdf" target="_blank"><File size={24} className="hover:text-primary-foreground hover:cursor-pointer" /></a>
+                        <a href="/assets/Pranav_Resume.pdf" target="_blank"><File size={24} className="hover:text-primary-foreground hover:cursor-pointer" /></a>
                     </span>
                 </div>
 
