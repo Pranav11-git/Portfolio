@@ -16,7 +16,7 @@ export const ProjectsCard = ({ title, image, description, liveLink = null, gitLi
         {gitLink && (
           <button
             onClick={() => window.open(gitLink, "_blank")}
-            className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition"
+            className="cursor-pointer bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition"
           >
             GitHub
           </button>
