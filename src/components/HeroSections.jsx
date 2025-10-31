@@ -32,9 +32,9 @@ export const HeroSections = ()=>{
         </div>
         
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce cursor-pointer">
-                <a href="#about">
-                    <span className="text-sm text-muted-foreground mb-2">Scroll</span>
-                <ArrowBigDown  className="text-primary h-5 w-5"/>
+                <a href="#about" className="flex flex-col items-center">
+                    <span className="text-xl text-muted-foreground mb-2">Scroll</span>
+                <ArrowBigDown  className="text-primary  size-9"/>
                 </a>
                 
         </div>

@@ -1,28 +1,55 @@
+import { Linkedin, Github, Mail, File } from "lucide-react";
+import Resume from "../assets/Pranav_Resume (14).pdf"; // or use /public path
 
-export const ContactMe = ()=>{
-    return <section id="contact" className="py-24 px-4 relative">
-        <div className="">
-            <h1 className="text-3xl md:text-4xl font-bold text-primary mb-2">Contact Me</h1>
-            <p className="font-bold ">Fell free to contact me </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 place-items-center mt-3">
-                {/* its for full name and email */}
-                <div className="w-full md:p-10">
-                    <h1 className="p-4 md:text-2xl font-semibold">Full Name</h1>
-                    <input className="border-2 border-primary rounded-xl w-full h-10  md:h-15" type="text" required />
-                </div>
+export const ContactMe = () => {
+  return (
+    <footer id="contact" className="py-6 px-4 relative">
+      <div className="text-center">
+        <h1 className="text-3xl md:text-4xl font-bold text-primary mb-2">
+          Contact Me
+        </h1>
+        <p className="font-bold">Feel free to contact me</p>
+      </div>
+       
+      <div className="flex justify-center gap-6 my-10 mb-1">
+        <a
+          href="https://www.linkedin.com/in/1011-pranav-sharma/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="LinkedIn"
+        >
+          <Linkedin
+            size={28}
+            className="hover:text-primary-foreground hover:scale-110 transition-all duration-200 cursor-pointer"
+          />
+        </a>
 
-                <div className="w-full md:p-10" >
-                    <h1 className="p-4 md:text-2xl font-semibold">Email</h1>
-                    <input className="border-2 border-primary rounded-xl w-full h-10 md:h-15" type="email" name="" id="" required />
-                </div>
-            </div>
-            <div className=" w-full md:p-10">
-                {/* message */}
-                <h1 className="p-4 md:text-2xl font-semibold">Message</h1>
-                <textarea className="border-2 border-primary rounded-xl w-full h-10 md:w-full md:h-20"name="text" id="" required></textarea>
-            </div>
+        <a
+          href="https://github.com/Pranav11-git"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="GitHub"
+        >
+          <Github
+            size={28}
+            className="hover:text-primary-foreground hover:scale-110 transition-all duration-200 cursor-pointer"
+          />
+        </a>
 
-            <button className="w-50 h-10 rounded-2xl text-2xl m-3 hover:cursor-pointer hover:bg-primary/80 bg-primary text-primary-foreground">Submit</button>
-        </div>
-    </section>
-}
+        <a href="mailto:prs11102004@gmail.com" title="Email">
+          <Mail
+            size={28}
+            className="hover:text-primary-foreground hover:scale-110 transition-all duration-200 cursor-pointer"
+          />
+        </a>
+
+        <a href={Resume} target="_blank" rel="noopener noreferrer" title="Resume">
+          <File
+            size={28}
+            className="hover:text-primary-foreground hover:scale-110 transition-all duration-200 cursor-pointer"
+          />
+        </a>
+      </div>
+    </footer>
+  );
+};

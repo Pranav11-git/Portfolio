@@ -19,11 +19,14 @@ export const Navbar = ()=>{
 useEffect(() => {
   const handleScroll = () => {
     setScrolled(window.scrollY > 10);
+    if(isMenuOpen){
+      setMenuOpen(false)
+    }
   };
 
   window.addEventListener("scroll", handleScroll);
   return () => window.removeEventListener("scroll", handleScroll);
-}, []);
+}, [isMenuOpen]);
 
 return (
   <nav
