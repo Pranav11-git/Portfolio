@@ -4,7 +4,7 @@ export const AboutSection = ()=>{
     return <section id="about" className="py-24 px-4 relative">
         <div className="conatiner">
             <h2 className="text-3xl md:text-4xl font-bold mb-5 text-center">
-                About <span className="text-primary">Me</span>
+                <span className="text-primary-foreground">About</span> <span className="text-primary">Me</span>
             </h2>
             <h2 className="font-bold text-wrap">I’m Pranav, a software developer skilled in C++, Python, and React, focused on creating efficient, scalable, and innovative solutions.</h2>
         </div>

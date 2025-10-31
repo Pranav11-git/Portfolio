@@ -7,7 +7,6 @@ import { Menu, X } from "lucide-react"
 const navItems = [
     {name :"Home", href:"#hero"},
     {name :"About", href:"#about"},
-    {name :"Skills", href:"#skills"},
     {name :"Projects", href:"#projects"},
     {name :"Contact", href:"#contact"},
 ]
@@ -41,11 +40,7 @@ return (
         href="#hero"
       >
         <span className="relative z-10">
-          <img
-            className="size-20"
-            src="src/assets/ChatGPT_Image_Oct_21__2025__03_21_40_PM-removebg-preview.png"
-            alt=""
-          />
+          <span className="text-primary-foreground text-2xl">Pranav</span> <span className="text-2xl">Sharma</span>
         </span>
       </a>
 
